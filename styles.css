@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Cooper Black', sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #8100bd;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Title Page Styles */
+.title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideUp 2s ease-out forwards;
+    color: #ffd500;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+}
+
+/* Enter Button Styles */
+.enter-button {
+    margin-top: 20px;
+}
+
+.enter-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffaa00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enter-button a:hover {
+    background-color: #06d5dc;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+/* Tagline Styles */
+.tagline {
+    font-family: 'Forte', sans-serif;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/* Members Page Styles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #eeff00;
+}
+
+.member-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.member {
+    background-color: #ff7300;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 251, 255);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.member h2 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.member a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffeb3b;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.member a:hover {
+    background-color: #5500ff;
+}
